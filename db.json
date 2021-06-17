@@ -1,0 +1,210 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "title": "Adidas",
+      "logo": "https://www.adidas.ru/glass/react/f1fa822/assets/img/icon-adidas-logo.svg",
+      "sliderImages": [
+        "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/ruRU/Images/YEEZY_BOOST_700_ENFLAME_AMBER_HP-d_tcm224-692218.jpg",
+        "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/ruRU/Images/YEEZY_BOOST_700_ENFLAME_AMBER_HP-d_tcm224-692218.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Nike",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png",
+      "sliderImages": [
+        "https://static.nike.com/a/images/f_auto/dpr_2.0/w_1328,c_limit/8d46e417-036f-4ce1-980b-7b1e47752c13/nike-just-do-it.jpg",
+        "https://static.nike.com/a/images/f_auto/w_1920,c_limit/0c029a94-ec88-4c53-bae8-557c35154c62/image.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Puma",
+      "logo": "https://upload.wikimedia.org/wikipedia/ru/thumb/b/b4/Puma_logo.svg/2560px-Puma_logo.svg.png",
+      "sliderImages": [
+        "https://ru.puma.com/media/contentmanager/content/21SS_ECOM_MF_SP_SELECT_Felipe_Pantone_SplitHeroLeft_Tab__1536x1536_1.jpg",
+        "https://ru.puma.com/media/contentmanager/content/3_1536x1536_3.jpg"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "brand": 1,
+      "title": "КРОССОВКИ ДЛЯ БЕГА ULTRABOOST 21 PRIMEBLUE",
+      "price": 15999,
+      "description": "Понятие 'лучший' не статично. Когда мы впервые запустили adidas Ultraboost, это были лучшие беговые кроссовки в нашей истории. С каждой новой версией мы поднимаем планку. Теперь ты получаешь амортизацию, о которой даже не подозревал, и возврат энергии, которого ты всегда хотел. У этой модели поддерживающий верх adidas Primeknit+ и на 6% больше капсул Boost в подошве. Она заряжает каждый шаг дополнительной энергией благодаря системе Linear Energy Push, которая обеспечивает поддержку в передней и средней частях стопы.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/d7b701392efc440db995ac840136d86f_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/ca46e3d28b404b3f9d2fac84013701ea_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_011_hover_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/040276e8221849b7a886ac840136e465_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_02_standard.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "brand": 1,
+      "title": "КРОССОВКИ(Updated Product)",
+      "price": "20000",
+      "description": "Понятие 'лучший' не статично. Когда мы впервые запустили adidas Ultraboost, это были лучшие беговые кроссовки в нашей истории. С каждой новой версией мы поднимаем планку. Теперь ты получаешь амортизацию, о которой даже не подозревал, и возврат энергии, которого ты всегда хотел. У этой модели поддерживающий верх adidas Primeknit+ и на 6% больше капсул Boost в подошве. Она заряжает каждый шаг дополнительной энергией благодаря системе Linear Energy Push, которая обеспечивает поддержку в передней и средней частях стопы.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/d7b701392efc440db995ac840136d86f_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_01_standard.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "brand": 1,
+      "title": "КРОССОВКИ ZX 2K BOOST FUTURESHELL",
+      "price": 12999,
+      "description": "Встречай будущее в этих кроссовках adidas ZX 2K Boost. Модель в стиле ретро-техно вдохновлена беговой обувью 80-х. Верх из сетки и термополиуретана представлен в новых цветах и отдает дань уважения инновационному духу ZX. Половина промежуточной подошвы Boost скрыта полупрозрачным пяточным каркасом для дополнительного комфорта и поддержки.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7f0d83711a3a4b9c8436ace2001cf060_9366/Krossovki_ZX_2K_Boost_Futureshell_rozovyj_G57957_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/3483026165f34633b0f4ace2001cd119_9366/Krossovki_ZX_2K_Boost_Futureshell_rozovyj_G57957_02_standard_hover.jpg"
+      ]
+    },
+    {
+      "title": "Test",
+      "brand": 1,
+      "price": "6000",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/dd3da032976048bb95c7aafb003005a5_9366/Skalnye_tufli_Five_Ten_Hiangle_belyj_EE9033_01_standard.jpg"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Test",
+      "brand": 1,
+      "price": "6000",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/14f3ba9b8b0e49e68c4bac3d00ebe218_9366/Krossovki_ZX_1K_Boost_chernyj_FY5649_01_standard.jpg"
+      ],
+      "id": 6
+    },
+    {
+      "id": 7,
+      "brand": 1,
+      "title": "КРОССОВКИ ДЛЯ БЕГА ULTRABOOST 21 PRIMEBLUE",
+      "price": 15999,
+      "description": "Понятие 'лучший' не статично. Когда мы впервые запустили adidas Ultraboost, это были лучшие беговые кроссовки в нашей истории. С каждой новой версией мы поднимаем планку. Теперь ты получаешь амортизацию, о которой даже не подозревал, и возврат энергии, которого ты всегда хотел. У этой модели поддерживающий верх adidas Primeknit+ и на 6% больше капсул Boost в подошве. Она заряжает каждый шаг дополнительной энергией благодаря системе Linear Energy Push, которая обеспечивает поддержку в передней и средней частях стопы.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/d7b701392efc440db995ac840136d86f_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/ca46e3d28b404b3f9d2fac84013701ea_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_011_hover_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/040276e8221849b7a886ac840136e465_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_02_standard.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "brand": 1,
+      "title": "КРОССОВКИ(Updated Product)",
+      "price": "20000",
+      "description": "Понятие 'лучший' не статично. Когда мы впервые запустили adidas Ultraboost, это были лучшие беговые кроссовки в нашей истории. С каждой новой версией мы поднимаем планку. Теперь ты получаешь амортизацию, о которой даже не подозревал, и возврат энергии, которого ты всегда хотел. У этой модели поддерживающий верх adidas Primeknit+ и на 6% больше капсул Boost в подошве. Она заряжает каждый шаг дополнительной энергией благодаря системе Linear Energy Push, которая обеспечивает поддержку в передней и средней частях стопы.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/d7b701392efc440db995ac840136d86f_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_01_standard.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "brand": 1,
+      "title": "КРОССОВКИ ZX 2K BOOST FUTURESHELL",
+      "price": 12999,
+      "description": "Встречай будущее в этих кроссовках adidas ZX 2K Boost. Модель в стиле ретро-техно вдохновлена беговой обувью 80-х. Верх из сетки и термополиуретана представлен в новых цветах и отдает дань уважения инновационному духу ZX. Половина промежуточной подошвы Boost скрыта полупрозрачным пяточным каркасом для дополнительного комфорта и поддержки.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7f0d83711a3a4b9c8436ace2001cf060_9366/Krossovki_ZX_2K_Boost_Futureshell_rozovyj_G57957_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/3483026165f34633b0f4ace2001cd119_9366/Krossovki_ZX_2K_Boost_Futureshell_rozovyj_G57957_02_standard_hover.jpg"
+      ]
+    },
+    {
+      "title": "Test",
+      "brand": 1,
+      "price": "6000",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/dd3da032976048bb95c7aafb003005a5_9366/Skalnye_tufli_Five_Ten_Hiangle_belyj_EE9033_01_standard.jpg"
+      ],
+      "id": 10
+    },
+    {
+      "title": "Test",
+      "brand": 1,
+      "price": "6000",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/14f3ba9b8b0e49e68c4bac3d00ebe218_9366/Krossovki_ZX_1K_Boost_chernyj_FY5649_01_standard.jpg"
+      ],
+      "id": 11
+    },
+    {
+      "id": 12,
+      "brand": 2,
+      "price": 14000,
+      "category": "Nike",
+      "description": "The radiance lives on in the Nike Air Force 1 Low. This b-ball OG puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to help you shine. The upper features a digital print Swoosh that rides all the way to the back, leading to a flashy, textured backtab.",
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5768b674-e92e-4e0a-a565-c4ce648e8b08/air-force-1-low-shoe-r57dLb.png",
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9639ad8a-c973-4a55-8ee9-4edf551d6638/air-force-1-low-shoe-r57dLb.png"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Jordan Delta 2",
+      "price": 14000,
+      "brand": 2,
+      "description": "The radiance lives on in the Nike Air Force 1 Low. This b-ball OG puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to help you shine. The upper features a digital print Swoosh that rides all the way to the back, leading to a flashy, textured backtab.",
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/28e1f15b-b168-4042-88ea-3ebc5d3e9b95/jordan-delta-2-shoe-6Hh2sJ.png",
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7d054658-08e3-4820-99aa-1d46d72c0a18/jordan-delta-2-shoe-6Hh2sJ.png"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "КЕДЫ SUEDE MAYU UP WN'S",
+      "price": 9490,
+      "brand": 3,
+      "description": "Дерзкие, яркие кеды Suede Mayu UP Wn's – новое поколение модной женской обуви в уличном стиле. Классическая модель Suede преобразилась благодаря массивным пропорциям и платформе с эффектной отделкой. Эта крутая, удобная, универсальная обувь – идеальный вариант для создания супермодного образа.",
+      "images": [
+        "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/381650/01/sv01/fnd/RUS/w/1000/h/1000/bg/255,255,255",
+        "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/381650/01/fnd/RUS/w/1000/h/1000/bg/255,255,255"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1",
+      "email": "test@gmail.com",
+      "password": "123456"
+    },
+    {
+      "name": "Munara",
+      "email": "k.munara92@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Munara",
+      "email": "test2@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "quatro",
+      "email": "ex@gmail.com",
+      "password": "789456",
+      "id": 4
+    },
+    {
+      "name": "Munara",
+      "email": "k.munara92@gmail.com",
+      "password": "111111",
+      "id": 5
+    },
+    {
+      "name": "Munara",
+      "email": "fff123@mail.ru",
+      "password": "147852",
+      "id": 6
+    }
+  ]
+}
