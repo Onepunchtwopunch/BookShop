@@ -33,6 +33,7 @@ export default function ProductDetailPage() {
             });
         });
     };
+    console.log();
 
     return (
         <MainLayout>
