@@ -28,6 +28,7 @@ import LocalMallIcon from "@material-ui/icons/LocalMall";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import AccountCircle from "@material-ui/icons/AccountCircle";
+// import BackGroundImg from "../assets/images/wallpaper.jpg";
 
 const drawerWidth = 240;
 
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        backgroundColor: "#497272",
+        backgroundColor: "#6c8784",
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -86,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
         position: "fixed",
         top: "50%",
         right: 15,
-        backgroundColor: "#497272",
+        backgroundColor: "#209393",
     },
     contentShift: {
         transition: theme.transitions.create("margin", {
@@ -162,7 +163,7 @@ export default function MainLayout(props) {
             >
                 <Toolbar>
                     <IconButton
-                        color="inherit"
+                        color="black"
                         aria-label="open drawer"
                         onClick={handleDrawerOpen}
                         edge="start"
@@ -179,7 +180,7 @@ export default function MainLayout(props) {
           </IconButton> */}
                     <Link
                         to="/cart"
-                        style={{ textDecoration: "none", color: "white" }}
+                        style={{ textDecoration: "none", color: "black" }}
                     >
                         <IconButton color="inherit">
                             <LocalMallIcon />
@@ -188,7 +189,7 @@ export default function MainLayout(props) {
                     <div className={classes.navContent}>
                         <NavLink
                             className={classes.logo}
-                            style={{ textDecoration: "none", color: "#fff" }}
+                            style={{ textDecoration: "none", color: "black" }}
                             to="/"
                         >
                             <Typography variant="h6" noWrap>
@@ -233,7 +234,7 @@ export default function MainLayout(props) {
                                 <Button
                                     component={Link}
                                     to="/login"
-                                    color="inherit"
+                                    color="black"
                                 >
                                     Login
                                 </Button>
@@ -241,7 +242,7 @@ export default function MainLayout(props) {
                                 <Button
                                     component={Link}
                                     to="/register"
-                                    color="red"
+                                    color="black"
                                 >
                                     Sign Up
                                 </Button>
@@ -288,6 +289,11 @@ export default function MainLayout(props) {
                 </List>
             </Drawer>
             <main
+                style={{
+                    // backgroundImage: `url(${BackGroundImg})`,
+                    // objectFit: "cover",
+                    backgroundColor: "#D2D7D3",
+                }}
                 className={clsx(classes.content, {
                     [classes.contentShift]: open,
                 })}

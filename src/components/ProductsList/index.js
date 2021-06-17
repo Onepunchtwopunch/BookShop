@@ -15,13 +15,33 @@ export default function ProductsList({ products }) {
     return (
         <div className={classes.root}>
             <div>
-                <h2 style={{ color: "black", textAlign: "center" }}>
+                <h1
+                    style={{
+                        color: "black",
+                        textAlign: "center",
+                        font: 54,
+                        color: "red",
+                    }}
+                >
                     BESTSELLERS
-                </h2>
+                </h1>
             </div>
-            <Grid container spacing={3}>
+            <Grid
+                spacing={3}
+                container
+                direction="row"
+                justify="space-between"
+                alignItems="center"
+            >
                 {products.map((product) => (
-                    <Grid key={product.id} item xs={12} sm={6} md={4}>
+                    <Grid
+                        key={product.id}
+                        item
+                        xs={12}
+                        sm={6}
+                        md={4}
+                        style={{ display: "flex", justifyContent: "center" }}
+                    >
                         <ProductItem data={product} />
                     </Grid>
                 ))}

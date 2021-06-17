@@ -1,15 +1,16 @@
 footer {
-    background-color: #497272;
+    background-color: #6c8784;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 180px;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 h2 {
-    color: white;
+    color: black;
 }
 .classes.ContInfo {
     align-items: center;

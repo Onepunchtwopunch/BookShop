@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
@@ -28,6 +28,7 @@ function Copyright() {
         </Typography>
     );
 }
+
 const useStyles = makeStyles((theme) => ({
     paper: {
         marginTop: theme.spacing(8),
@@ -45,12 +46,18 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+        backgroundColor: theme.palette.success.main,
+    },
+
+    container: {
+        backgroundColor: theme.palette.info.light,
+    },
+    typography: {
+        color: theme.palette.text.primary,
     },
 }));
 
 export default function SignIn() {
-    const history = useHistory();
-
     const classes = useStyles();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -105,8 +112,6 @@ export default function SignIn() {
     };
 
     const handleSubmit = async (e) => {
-        history.push("/");
-
         e.preventDefault();
 
         try {
@@ -126,13 +131,17 @@ export default function SignIn() {
     }
 
     return (
-        <Container fixed component="main" maxWidth="xs">
+        <Container className={classes.container} component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">
+                <Typography
+                    className={classes.typography}
+                    component="h1"
+                    variant="h5"
+                >
                     Sign in
                 </Typography>
                 <form

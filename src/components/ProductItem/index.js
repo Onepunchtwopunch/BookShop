@@ -15,6 +15,7 @@ import { useContext } from "react";
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        borderRadius: 15,
     },
     media: {
         height: 520,

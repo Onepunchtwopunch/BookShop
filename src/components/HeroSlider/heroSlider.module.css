@@ -3,13 +3,13 @@
 }
 
 .heroImg img {
-    height: 90vh !important;
-    object-fit: cover;
-    object-position: center;
+    height: 50vh !important;
+    object-fit: fill;
+    object-position: bottom;
 }
 
 @media only screen and (max-width: 768px) {
     .heroImg img {
-        height: 500px !important;
+        height: 1500px !important;
     }
 }

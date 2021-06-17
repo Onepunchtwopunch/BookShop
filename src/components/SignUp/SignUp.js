@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Redirect } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -13,10 +14,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { authContext } from "../../contexts/AuthContext";
-import { useContext } from "react";
-import { useState } from "react";
-import { useHistory } from "react-router";
-
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
@@ -29,7 +26,6 @@ function Copyright() {
         </Typography>
     );
 }
-
 const useStyles = makeStyles((theme) => ({
     paper: {
         marginTop: theme.spacing(8),
@@ -48,11 +44,15 @@ const useStyles = makeStyles((theme) => ({
     submit: {
         margin: theme.spacing(3, 0, 2),
     },
+    typography: {
+        color: theme.palette.text.primary,
+    },
+    container: {
+        backgroundColor: theme.palette.info.light,
+    },
 }));
-
 export default function SignUp() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [emailDirty, setEmailDirty] = useState(false);
@@ -61,23 +61,13 @@ export default function SignUp() {
     const [passwordError, setPasswordError] = useState(
         "Password can not be empty"
     );
-    const history = useHistory();
     const [formValid, setFormValid] = useState(false);
-
     const classes = useStyles();
-
-    const { login, user, isAuthorized } = useContext(authContext);
-
-    const firstNameHandler = (e) => {
+    const { user, isAuthorized, register } = useContext(authContext);
+    const nameHandler = (e) => {
         const { value } = e.target;
-        setFirstName(value);
+        setName(value);
     };
-
-    const lastNameHandler = (e) => {
-        const { value } = e.target;
-        setLastName(value);
-    };
-
     const emailHandler = (e) => {
         const { value } = e.target;
         setEmail(value);
@@ -91,7 +81,6 @@ export default function SignUp() {
             setEmailDirty(false);
         }
     };
-
     const passwordHandler = (e) => {
         const { value } = e.target;
         setPassword(value);
@@ -109,35 +98,34 @@ export default function SignUp() {
             setPasswordDirty(false);
         }
     };
-
-    const handleClick = (e) => {
-        setFormValid();
-    };
-
     const handleSubmit = async (e) => {
-        history.push("/");
         e.preventDefault();
-
         try {
             const params = {
+                name,
                 email,
                 password,
             };
-
-            await login(params);
+            await register(params);
         } catch (e) {
             console.log(e);
         }
     };
-
+    if (isAuthorized) {
+        return <Redirect to="/" />;
+    }
     return (
-        <Container component="main" maxWidth="xs">
+        <Container className={classes.container} component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">
+                <Typography
+                    className={classes.typography}
+                    component="h1"
+                    variant="h5"
+                >
                     Sign up
                 </Typography>
                 <form
@@ -146,31 +134,17 @@ export default function SignUp() {
                     onSubmit={handleSubmit}
                 >
                     <Grid container spacing={2}>
-                        <Grid item xs={12} sm={6}>
-                            <TextField
-                                autoComplete="fname"
-                                name="firstName"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="firstName"
-                                label="First Name"
-                                autoFocus
-                                value={firstName}
-                                onChange={firstNameHandler}
-                            />
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} sm={12}>
                             <TextField
                                 variant="outlined"
                                 required
                                 fullWidth
-                                id="lastName"
-                                label="Last Name"
-                                name="lastName"
-                                autoComplete="lname"
-                                value={lastName}
-                                onChange={lastNameHandler}
+                                id="name"
+                                label="Name"
+                                name="name"
+                                autoComplete="name"
+                                value={name}
+                                onChange={nameHandler}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -218,7 +192,6 @@ export default function SignUp() {
                         variant="contained"
                         color="primary"
                         className={classes.submit}
-                        onClick={handleClick}
                     >
                         Sign Up
                     </Button>

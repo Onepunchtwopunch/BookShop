@@ -4,9 +4,9 @@ import ProductsList from "../../components/ProductsList";
 import ProductsPagination from "../../components/ProductsPagination";
 import { storeContext } from "../../contexts/StoreContext";
 import MainLayout from "../../Layouts/MainLayout";
-import HeroImg from "../../assets/images/hero.jpeg";
-import HeroImg2 from "../../assets/images/hero2.jpeg";
-import HeroImg3 from "../../assets/images/hero3.jpeg";
+import HeroImg from "../../assets/images/heroBook3.jpeg";
+import HeroImg2 from "../../assets/images/heroBook3.jpeg";
+import HeroImg3 from "../../assets/images/heroBook3.jpeg";
 
 export default function MainPage() {
     const { products, fetchProducts, total } = useContext(storeContext);
