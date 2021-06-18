@@ -7,7 +7,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import { calcTotalPrice } from "../../helpers/calcPrice";
 import { storeContext } from "../../contexts/StoreContext";
 import { Link } from "react-router-dom";
@@ -38,6 +38,10 @@ export default function Cart() {
     useEffect(() => {
         getCart();
     }, []);
+
+    const handleOrder = () => {
+        localStorage.removeItem("cart");
+    };
 
     return (
         <>
@@ -107,6 +111,18 @@ export default function Cart() {
                                 </TableCell>
                             ) : null}
                         </TableRow>
+                        <Link to="/order">
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className={classes.submit}
+                                onClick={handleOrder}
+                            >
+                                Заказать
+                            </Button>
+                        </Link>
                     </TableBody>
                 </Table>
             </TableContainer>

@@ -1,202 +1,204 @@
 {
-    "products": [
-        {
-            "genre": "Fantasy",
-            "title": "The Lord of the Rings",
-            "author": "J. R. R. Tolkien",
-            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
-            "price": "350",
-            "images": [
-                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
-                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
-                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
-            ],
-            "id": 1,
-            "sold": 5
-        },
-        {
-            "genre": "Fantasy",
-            "title": "Game of Thrones",
-            "author": "George R. R. Martin",
-            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
-            "price": "500",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
-            ],
-            "id": 2,
-            "sold": 8
-        },
-        {
-            "genre": "Science fiction",
-            "title": "I, Robot",
-            "author": "Isaac Asimov",
-            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
-            "price": "666",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
-            ],
-            "id": 3,
-            "sold": 8
-        },
-        {
-            "genre": "Fantasy",
-            "title": "The Lord of the Rings",
-            "author": "J. R. R. Tolkien",
-            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
-            "price": "350",
-            "images": [
-                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
-                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
-                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
-            ],
-            "id": 4,
-            "sold": 3
-        },
-        {
-            "genre": "Fantasy",
-            "title": "Game of Thrones",
-            "author": "George R. R. Martin",
-            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
-            "price": "5555",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
-                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
-                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
-            ],
-            "id": 5,
-            "sold": 3
-        },
-        {
-            "genre": "Science fiction",
-            "title": "I, Robot",
-            "author": "Isaac Asimov",
-            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
-            "price": "666",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
-            ],
-            "id": 6,
-            "sold": 3
-        },
-        {
-            "genre": "Fantasy",
-            "title": "The Lord of the Rings",
-            "author": "J. R. R. Tolkien",
-            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
-            "price": "350",
-            "images": [
-                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
-                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
-                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
-            ],
-            "id": 7,
-            "sold": 3
-        },
-        {
-            "genre": "Fantasy",
-            "title": "Game of Thrones",
-            "author": "George R. R. Martin",
-            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
-            "price": "5555",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
-                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
-                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
-            ],
-            "id": 8,
-            "sold": 3
-        },
-        {
-            "genre": "Science fiction",
-            "title": "I, Robot",
-            "author": "Isaac Asimov",
-            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
-            "price": "666",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
-            ],
-            "id": 9,
-            "sold": 3
-        },
-        {
-            "genre": "Fantasy",
-            "title": "The Lord of the Rings",
-            "author": "J. R. R. Tolkien",
-            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
-            "price": "350",
-            "images": [
-                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
-                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
-                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
-            ],
-            "id": 10,
-            "sold": 3
-        },
-        {
-            "genre": "Fantasy",
-            "title": "Game of Thrones",
-            "author": "George R. R. Martin",
-            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
-            "price": "5555",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
-                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
-                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
-            ],
-            "id": 11,
-            "sold": 3
-        },
-        {
-            "genre": "Science fiction",
-            "title": "I, Robot",
-            "author": "Isaac Asimov",
-            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
-            "price": "666",
-            "images": [
-                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
-            ],
-            "id": 12,
-            "sold": 3
-        }
-    ],
-    "users": [
-        {
-            "name": "Mel",
-            "email": "melis_bg@mail.ru",
-            "password": "123456",
-            "id": 1
-        }
-    ],
-    "brands": [
-        {
-            "id": 1,
-            "title": "Fantasy",
-            "logo": "https://image.flaticon.com/icons/png/512/62/62081.png",
-            "sliderImages": []
-        },
-        {
-            "id": 2,
-            "title": "Science fiction",
-            "logo": "http://cdn.onlinewebfonts.com/svg/download_534831.png",
-            "sliderImages": []
-        },
-        {
-            "id": 3,
-            "title": "Roman",
-            "logo": "https://i7.pngguru.com/preview/445/853/287/silhouette-black-white-character-clip-art-couple-figure.jpg",
-            "sliderImages": []
-        },
-        {
-            "id": 4,
-            "title": "Detective",
-            "logo": "https://www.pngix.com/pngfile/big/62-624703_download-png-transparent-png.png",
-            "sliderImages": []
-        },
-        {
-            "id": 5,
-            "title": "Classics",
-            "logo": "http://www.tania-soleil.com/wp-content/uploads/2016/01/Pushkin-profil-350x348.jpg",
-            "sliderImages": []
-        }
-    ]
+  "products": [
+    {
+      "genre": "Fantasy",
+      "title": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
+      "price": "350",
+      "images": [
+        "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
+        "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
+        "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
+      ],
+      "id": 1,
+      "sold": 5
+    },
+    {
+      "genre": "Fantasy",
+      "title": "Game of Thrones",
+      "author": "George R. R. Martin",
+      "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
+      "price": "1000",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
+      ],
+      "id": 2,
+      "sold": 8
+    },
+    {
+      "genre": "Science fiction",
+      "title": "I, Robot",
+      "author": "Isaac Asimov",
+      "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
+      "price": "666",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
+      ],
+      "id": 3,
+      "sold": 8
+    },
+    {
+      "genre": "Science fiction",
+      "title": "Собачье сердце",
+      "autor": "Михаил Булгаков",
+      "price": "650",
+      "description": "Повесть написана в январе—марте 1925 года[1]. При обыске, произведённом у Булгакова ОГПУ 7 мая 1926 г. (ордер 2287, дело 45), у писателя была изъята также и рукопись повести.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/ru/5/51/%D0%A1%D0%BE%D0%B1%D0%B0%D1%87%D1%8C%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5%28%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0%29.jpg"
+      ],
+      "id": 6
+    },
+    {
+      "genre": "Science fiction",
+      "title": "Цветы для Элджернона",
+      "autor": "Дэниел Киз",
+      "price": "750",
+      "description": "«Цветы для Э́лджернона» — научно-фантастический рассказ Дэниела Киза. Первоначально издан в апрельском номере «Журнала фэнтези и научной фантастики» за 1959 год. Премия «Хьюго» за лучший короткий научно-фантастический рассказ.",
+      "images": [
+        "https://img-gorod.ru/22/363/2236396_detail.jpg"
+      ],
+      "id": 7
+    },
+    {
+      "genre": "Science fiction",
+      "title": "Марсианин",
+      "autor": "Энди Уир",
+      "price": "800",
+      "description": "«Марсианин» — дебютный роман американского писателя Энди Вейра в жанре фантастики. В центре романа астронавт Марк Уотни, которого вследствие сложившихся обстоятельств оставили одного на Марсе. Ему приходится проявлять фантазию и применять все свои знания, чтобы выжить и попытаться вернуться на Землю.",
+      "images": [
+        "https://static.librebook.me/uploads/pics/01/69/334.jpg"
+      ],
+      "id": 8
+    },
+    {
+      "genre": "Classic",
+      "title": "Жизнь взаймы",
+      "autor": "Ремарк Эрих Мария",
+      "price": "450",
+      "description": "Жизнь взаймы это целая эпоха",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLldYdlNP89pQKfm3bDPtt5OBaIms_HkEzQ&usqp=CAU"
+      ],
+      "id": 9,
+      "author": "."
+    },
+    {
+      "genre": "Classic",
+      "title": "Триумфальная арка",
+      "autor": "Эрих Мария Ремарк",
+      "price": "500",
+      "description": "Триумфальная арка, война, друзья и любовь",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9zZ9mxicozBqMyVhs82IGPWIZkKvrwkiWig&usqp=CAU"
+      ],
+      "id": 10
+    },
+    {
+      "title": "The Ghost Brigades",
+      "price": "1700",
+      "description": "The Colonial Defense Forces (CDF) learn that one of their top consciousness transfer scientists, Charles Boutin, has turned traitor and sparked an unprecedented alliance between three other species to wipe out humanity. While investigating Boutin's clumsy attempt to fake his own death, the CDF discovers that Boutin had successfully stored a copy of his consciousness in a computer. The colonial Special Forces, nicknamed \"The Ghost Brigades,\" create a CDF soldier body with Boutin's DNA to try to implant the copy of Boutin's consciousness into the new brain, to learn where Boutin has escaped to and what his intentions really are. After the attempt seemingly fails, the soldier (named Jared Dirac, after Paul Dirac) becomes a private in the Special Forces and is assigned to a platoon commanded by Jane Sagan. On the off chance that Boutin's consciousness does emerge, Sagan and her superiors are determined to keep an eye on Jared. Time passes and an experience that reminds Dirac of Boutin's daughter Zoe leads Boutin's consciousness to emerge. Jared slowly becomes more and more like Boutin while losing his own personality traits, but retains his individuality and his strong moral opposition to Boutin's philosophy and actions. When the extent of Boutin's treachery becomes known, it's clear there will be some difficult choices required to stop Boutin's alliance with the Rraey, Eneshan and Obin.",
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/en/6/64/Ghost_Brigades.jpg"
+      ],
+      "sold": 0,
+      "genre": "Fantasy",
+      "author": "John Scalzi",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "name": "Mel",
+      "email": "melis_bg@mail.ru",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Melis",
+      "email": "john@gmail.com",
+      "password": "0987654",
+      "id": 2
+    },
+    {
+      "name": "dffse",
+      "email": "melis_bg@bk.ru",
+      "password": "258369",
+      "id": 3
+    },
+    {
+      "name": "Mel",
+      "email": "melis_bg@mail.ru",
+      "password": "bnn",
+      "id": 4
+    },
+    {
+      "name": "Frank Lampard",
+      "email": "john@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "Ivan",
+      "email": "john@gmail.com",
+      "password": "1234567",
+      "id": 6
+    },
+    {
+      "name": "Nicole",
+      "email": "john@gmail.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "name": "Mel",
+      "email": "john@gmail.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "name": "Mel",
+      "email": "john@gmail.com",
+      "password": "123456",
+      "id": 9
+    },
+    {
+      "name": "Mel",
+      "email": "john@gmail.com",
+      "password": "123456",
+      "id": 10
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "title": "Fantasy",
+      "logo": "https://image.flaticon.com/icons/png/512/62/62081.png",
+      "sliderImages": []
+    },
+    {
+      "id": 2,
+      "title": "Science fiction",
+      "logo": "http://cdn.onlinewebfonts.com/svg/download_534831.png",
+      "sliderImages": []
+    },
+    {
+      "id": 3,
+      "title": "Roman",
+      "logo": "https://i7.pngguru.com/preview/445/853/287/silhouette-black-white-character-clip-art-couple-figure.jpg",
+      "sliderImages": []
+    },
+    {
+      "id": 4,
+      "title": "Detective",
+      "logo": "https://www.pngix.com/pngfile/big/62-624703_download-png-transparent-png.png",
+      "sliderImages": []
+    },
+    {
+      "id": 5,
+      "title": "Classics",
+      "logo": "http://www.tania-soleil.com/wp-content/uploads/2016/01/Pushkin-profil-350x348.jpg",
+      "sliderImages": []
+    }
+  ]
 }

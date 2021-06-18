@@ -4,6 +4,7 @@ import { BASE_URL, API } from "../common/constants";
 
 const INIT_STATE = {
     isAuthorized: false,
+    products: [],
     user: null,
     users: [],
 };
@@ -40,6 +41,11 @@ const reducer = (state = INIT_STATE, action) => {
                         ...action.payload,
                     },
                 ],
+            };
+        case "ORDER":
+            return {
+                ...state,
+                products: action.payload,
             };
         default:
             return state;
@@ -93,14 +99,27 @@ export default function AuthContextProvider(props) {
         return registered.data;
     };
 
+    const order = async (data) => {
+        const response = await axios.post(`${URL}/products`, data);
+        const ordered = response.data;
+
+        dispatch({
+            type: "ORDER",
+            payload: order,
+        });
+        return ordered.data;
+    };
+
     return (
         <authContext.Provider
             value={{
                 isAuthorized: state.isAuthorized,
+                products: state.products,
                 user: state.user,
                 login,
                 logout,
                 register,
+                order,
             }}
         >
             {props.children}

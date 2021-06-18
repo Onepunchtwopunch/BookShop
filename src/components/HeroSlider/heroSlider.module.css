@@ -10,6 +10,6 @@
 
 @media only screen and (max-width: 768px) {
     .heroImg img {
-        height: 1500px !important;
+        /* height: 1500px !important; */
     }
 }

@@ -71,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: "flex-end",
+        backgroundColor: "#6c8784",
     },
     content: {
         flexGrow: 1,
@@ -82,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: -drawerWidth,
         minHeight: "100vh",
         position: "relative",
+        backgroundColor: "#6c8784",
     },
     addBtn: {
         position: "fixed",
@@ -193,7 +195,7 @@ export default function MainLayout(props) {
                             to="/"
                         >
                             <Typography variant="h6" noWrap>
-                                MyStore
+                                BookShop
                             </Typography>
                         </NavLink>
 

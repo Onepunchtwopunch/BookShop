@@ -27,7 +27,7 @@ export default function ProductsList({ products }) {
                 </h1>
             </div>
             <Grid
-                spacing={3}
+                spacing={2}
                 container
                 direction="row"
                 justify="space-between"

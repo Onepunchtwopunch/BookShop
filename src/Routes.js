@@ -10,11 +10,13 @@ import Cart from "./components/Cart/Cart";
 import Login from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Footer from "./components/Footer/Footer";
+import Order from "./components/Order/index";
 
 export default function Routes() {
     return (
         <Router>
             <Switch>
+                <Route path="/Order" component={Order} exact />
                 <Route path="/" component={MainPage} exact />
                 <Route path="/login" component={Login} exact />
                 <Route path="/register" component={SignUp} exact />

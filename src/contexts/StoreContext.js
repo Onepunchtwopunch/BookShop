@@ -5,6 +5,7 @@ import { BASE_URL, API } from "../common/constants";
 
 const INIT_STATE = {
     products: [],
+    productsAll: [],
     brands: [],
     brandDetail: null,
     productDetail: null,
@@ -19,6 +20,12 @@ const reducer = (state = INIT_STATE, action) => {
             return {
                 ...state,
                 products: action.payload.data,
+                total: action.payload.total,
+            };
+        case "SET_PRODUCTS_ALL":
+            return {
+                ...state,
+                productsAll: action.payload.data,
                 total: action.payload.total,
             };
         case "SET_CATEGORIES":
@@ -112,13 +119,13 @@ export default function StoreContextProvider(props) {
             const response = await axios.get(
                 `${URL}/products?_start=${page * 6}&_end=${6 * (page + 1)}`
             );
-            const products = response.data;
+            const productsAll = response.data;
             const total = response.headers["x-total-count"];
 
             dispatch({
-                type: "SET_PRODUCTS",
+                type: "SET_PRODUCTS_ALL",
                 payload: {
-                    data: products,
+                    data: productsAll,
                     total,
                 },
             });
@@ -270,6 +277,7 @@ export default function StoreContextProvider(props) {
         <storeContext.Provider
             value={{
                 products: state.products,
+                productsAll: state.productsAll,
                 total: state.total,
                 productDetail: state.productDetail,
                 brands: state.brands,

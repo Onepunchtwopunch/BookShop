@@ -10,15 +10,15 @@ import HeroImg3 from "../../assets/images/heroBook3.jpeg";
 import ProductsListAll from "../../components/ProductsList/index2";
 
 export default function MainPage() {
-    const { products, fetchProducts, fetchProductsAll, total } =
+    const { products, productsAll, fetchProducts, fetchProductsAll, total } =
         useContext(storeContext);
     const [page, setPage] = useState(1);
     const [pageAll, setPageAll] = useState(1);
 
     useEffect(() => {
         fetchProducts(page - 1);
-        fetchProductsAll(page - 1);
-    }, [page]);
+        fetchProductsAll(pageAll - 1);
+    }, [page, pageAll]);
 
     const heroSlider = [
         { src: HeroImg, title: "hero" },
@@ -38,7 +38,7 @@ export default function MainPage() {
                 page={page}
                 count={Math.ceil(total / 3)}
             />
-            <ProductsListAll products={products} />
+            <ProductsListAll products={productsAll} />
             <ProductsPagination
                 setPage={setPageAll}
                 page={pageAll}

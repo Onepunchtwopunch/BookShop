@@ -29,10 +29,25 @@ export default function ProductsListAll({ products }) {
 
     return (
         <div style={{ padding: 25 }}>
-            <Typography variant="subtitle1" gutterBottom>
+            <Typography
+                style={{
+                    color: "black",
+                    textAlign: "center",
+                    font: 54,
+                    color: "red",
+                }}
+                variant="subtitle1"
+                gutterBottom
+            >
                 Все категории:
             </Typography>
-            <Grid container spacing={5}>
+            <Grid
+                container
+                spacing={5}
+                direction="row"
+                justify="space-between"
+                alignItems="center"
+            >
                 {products.map((product) => (
                     <Grid item xs={2}>
                         <ProductItem data={product} />

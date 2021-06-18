@@ -18,7 +18,7 @@ export default function Footer() {
             <div>
                 <h2>Реклама на сайте</h2>
                 <CallEndOutlinedIcon style={{ color: "black" }} />
-                <a href="+996555666666"> +996 555 666 666</a>
+                <a href="#"> +996 555 666 666</a>
                 <br />
                 <MailOutlineIcon style={{ color: "black" }} />
                 <a href="Bookshop@gmail.com">bookshop.ofis@gmail.com</a>

@@ -11,6 +11,8 @@ import Truncate from "react-truncate";
 import { useHistory } from "react-router";
 import { storeContext } from "../../contexts/StoreContext";
 import { useContext } from "react";
+import ShoppingBasketSharpIcon from "@material-ui/icons/ShoppingBasketSharp";
+import InputRoundedIcon from "@material-ui/icons/InputRounded";
 
 const useStyles = makeStyles({
     root: {
@@ -27,7 +29,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function ProductItem({ data }) {
+export default function ProductItem({ data, width, height, imageHeight }) {
     const classes = useStyles();
 
     const { genre, title, author, images, price, description, id } = data;
@@ -37,10 +39,16 @@ export default function ProductItem({ data }) {
     const history = useHistory();
 
     return (
-        <Card className={classes.root}>
+        <Card
+            className={classes.root}
+            style={{
+                minHeight: height ? height : "",
+            }}
+        >
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
+                    style={{ height: imageHeight ? imageHeight : "" }}
                     image={images[0]}
                     title={title}
                 />
@@ -53,7 +61,7 @@ export default function ProductItem({ data }) {
                     >
                         <Truncate
                             style={{ color: "black" }}
-                            lines={2}
+                            lines={1}
                             ellipsis={"..."}
                         >
                             {title}
@@ -62,7 +70,7 @@ export default function ProductItem({ data }) {
                     <Typography gutterBottom variant="h5" component="h2">
                         <Truncate
                             style={{ color: "black" }}
-                            lines={2}
+                            lines={1}
                             ellipsis={"..."}
                         >
                             {author}
@@ -75,7 +83,7 @@ export default function ProductItem({ data }) {
                         color="textSecondary"
                         component="p"
                     >
-                        <Truncate lines={3} ellipsis={"..."}>
+                        <Truncate lines={1} ellipsis={"..."}>
                             {description}
                         </Truncate>
                         <Typography
@@ -94,14 +102,14 @@ export default function ProductItem({ data }) {
                     size="small"
                     color="primary"
                 >
-                    Cart
+                    <ShoppingBasketSharpIcon />
                 </Button>
                 <Button
                     onClick={() => history.push(`/products/${id}`)}
                     size="small"
                     color="primary"
                 >
-                    Далее
+                    <InputRoundedIcon />
                 </Button>
             </CardActions>
         </Card>
