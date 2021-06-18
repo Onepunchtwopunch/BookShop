@@ -118,7 +118,7 @@ export default function MainLayout(props) {
     const history = useHistory();
     const [open, setOpen] = React.useState(false);
 
-    const { categories, fetchCategories } = useContext(storeContext);
+    const { brands, fetchBrands } = useContext(storeContext);
     const { user, logout } = useContext(authContext);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const openAnch = Boolean(anchorEl);
@@ -132,7 +132,7 @@ export default function MainLayout(props) {
     };
 
     useEffect(() => {
-        fetchCategories();
+        fetchBrands();
     }, []);
 
     const handleDrawerOpen = () => {
@@ -242,7 +242,7 @@ export default function MainLayout(props) {
                                 <Button
                                     component={Link}
                                     to="/register"
-                                    color="black"
+                                    color="red"
                                 >
                                     Sign Up
                                 </Button>
@@ -271,20 +271,19 @@ export default function MainLayout(props) {
                 </div>
                 <Divider />
                 <List>
-                    {categories.map((category) => (
-                        <ListItem button key={category.id}>
-                            <ListItemText primary={category.name} />
-
-                            {category.logo && (
+                    {brands.map((brand) => (
+                        <Link to={`/brand/${brand.title}`}>
+                            <ListItem button key={brand.id}>
+                                <ListItemText primary={brand.title} />
                                 <ListItemIcon>
                                     <img
                                         className={classes.brandLogo}
-                                        src={category.logo}
-                                        alt={`${category.title} logo`}
+                                        src={brand.logo}
+                                        alt={`${brand.title} logo`}
                                     />
                                 </ListItemIcon>
-                            )}
-                        </ListItem>
+                            </ListItem>
+                        </Link>
                     ))}
                 </List>
             </Drawer>

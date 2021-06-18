@@ -10,40 +10,7 @@ const INIT_STATE = {
     productDetail: null,
     total: 0,
     cart: {},
-    categories: [
-        {
-            id: 1,
-            name: "makers category",
-            parent: null,
-        },
-        {
-            id: 2,
-            name: "sports",
-            parent: null,
-        },
-        {
-            id: 3,
-            name: "food",
-            parent: null,
-            children: [
-                {
-                    id: 4,
-                    name: "bevarege",
-                    parent: 3,
-                },
-            ],
-        },
-        {
-            id: 4,
-            name: "bevarege",
-            parent: 3,
-        },
-        {
-            id: 6,
-            name: "books",
-            parent: null,
-        },
-    ],
+    categories: [],
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -140,6 +107,25 @@ export default function StoreContextProvider(props) {
         }
     };
 
+    const fetchProductsAll = async (page = 0) => {
+        try {
+            const response = await axios.get(
+                `${URL}/products?_start=${page * 6}&_end=${6 * (page + 1)}`
+            );
+            const products = response.data;
+            const total = response.headers["x-total-count"];
+
+            dispatch({
+                type: "SET_PRODUCTS",
+                payload: {
+                    data: products,
+                    total,
+                },
+            });
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
     const fetchSearchProducts = async (value) => {
         const response = await axios.get(`${URL}/products/?q=${value}`);
         const products = response.data;
@@ -198,7 +184,7 @@ export default function StoreContextProvider(props) {
         });
     };
     const fetchBrandProducts = async (brandId) => {
-        const response = await axios.get(`${URL}/products/?brand=${brandId}`);
+        const response = await axios.get(`${URL}/products?genre=${brandId}`);
         const products = response.data;
         const total = response.headers["x-total-count"];
         dispatch({
@@ -210,7 +196,7 @@ export default function StoreContextProvider(props) {
         });
     };
     const fetchBrandDetail = async (brandId) => {
-        const response = await axios.get(`${URL} / brands / ${brandId}`);
+        const response = await axios.get(`${URL}/brands/${brandId}`);
         const brand = response.data;
 
         dispatch({
@@ -290,6 +276,7 @@ export default function StoreContextProvider(props) {
                 cart: state.cart,
                 categories: state.categories,
                 fetchProducts,
+                fetchProductsAll,
                 fetchProductDetail,
                 createProduct,
                 deleteProduct,

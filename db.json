@@ -1,26 +1,30 @@
 {
     "products": [
         {
-            "id": 1,
             "genre": "Fantasy",
             "title": "The Lord of the Rings",
             "author": "J. R. R. Tolkien",
             "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
+            "price": "350",
             "images": [
-                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max"
+                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
+                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
+                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
             ],
-            "price": 0
+            "id": 1,
+            "sold": 5
         },
         {
             "genre": "Fantasy",
             "title": "Game of Thrones",
             "author": "George R. R. Martin",
             "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
-            "price": "5555",
+            "price": "500",
             "images": [
                 "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
             ],
-            "id": 2
+            "id": 2,
+            "sold": 8
         },
         {
             "genre": "Science fiction",
@@ -31,7 +35,128 @@
             "images": [
                 "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
             ],
-            "id": 3
+            "id": 3,
+            "sold": 8
+        },
+        {
+            "genre": "Fantasy",
+            "title": "The Lord of the Rings",
+            "author": "J. R. R. Tolkien",
+            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
+            "price": "350",
+            "images": [
+                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
+                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
+                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
+            ],
+            "id": 4,
+            "sold": 3
+        },
+        {
+            "genre": "Fantasy",
+            "title": "Game of Thrones",
+            "author": "George R. R. Martin",
+            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
+            "price": "5555",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
+                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
+                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
+            ],
+            "id": 5,
+            "sold": 3
+        },
+        {
+            "genre": "Science fiction",
+            "title": "I, Robot",
+            "author": "Isaac Asimov",
+            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
+            "price": "666",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
+            ],
+            "id": 6,
+            "sold": 3
+        },
+        {
+            "genre": "Fantasy",
+            "title": "The Lord of the Rings",
+            "author": "J. R. R. Tolkien",
+            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
+            "price": "350",
+            "images": [
+                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
+                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
+                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
+            ],
+            "id": 7,
+            "sold": 3
+        },
+        {
+            "genre": "Fantasy",
+            "title": "Game of Thrones",
+            "author": "George R. R. Martin",
+            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
+            "price": "5555",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
+                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
+                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
+            ],
+            "id": 8,
+            "sold": 3
+        },
+        {
+            "genre": "Science fiction",
+            "title": "I, Robot",
+            "author": "Isaac Asimov",
+            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
+            "price": "666",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
+            ],
+            "id": 9,
+            "sold": 3
+        },
+        {
+            "genre": "Fantasy",
+            "title": "The Lord of the Rings",
+            "author": "J. R. R. Tolkien",
+            "description": "Tolkien’s fantasy epic is one of the top must-read books out there. Set in Middle Earth – a world full of hobbits, elves, orcs, goblins, and wizards – The Lord of the Rings will take you on an unbelievable adventure.",
+            "price": "350",
+            "images": [
+                "https://www.oberlo.com/media/1603897585-image12-1.jpg?w=1824&fit=max",
+                "https://donttakefake.com/wp-content/uploads/2020/06/The-Lord-of-the-Rings-dtf-magazine.jpg",
+                "https://cdn23.img.ria.ru/images/155936/63/1559366313_69:0:1127:595_600x0_80_0_0_060590d0008d87ad317030c87a1e204e.jpg"
+            ],
+            "id": 10,
+            "sold": 3
+        },
+        {
+            "genre": "Fantasy",
+            "title": "Game of Thrones",
+            "author": "George R. R. Martin",
+            "description": "A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin. ... In the novel, recounting events from various points of view, Martin introduces the plot-lines of the noble houses of Westeros, the Wall, and the Targaryens.",
+            "price": "5555",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg",
+                "https://upload.wikimedia.org/wikipedia/ru/c/c6/Jon_Snow_HBO.jpg",
+                "https://ic.pics.livejournal.com/dubikvit/65747770/8580712/8580712_900.jpg"
+            ],
+            "id": 11,
+            "sold": 3
+        },
+        {
+            "genre": "Science fiction",
+            "title": "I, Robot",
+            "author": "Isaac Asimov",
+            "description": "I, Robot, a collection of nine short stories by science-fiction writer Isaac Asimov that imagines the development of “positronic” (humanlike, with a form of artificial intelligence) robots and wrestles with the moral implications of the technology.",
+            "price": "666",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/d/d5/I_robot.jpg"
+            ],
+            "id": 12,
+            "sold": 3
         }
     ],
     "users": [
@@ -40,6 +165,38 @@
             "email": "melis_bg@mail.ru",
             "password": "123456",
             "id": 1
+        }
+    ],
+    "brands": [
+        {
+            "id": 1,
+            "title": "Fantasy",
+            "logo": "https://image.flaticon.com/icons/png/512/62/62081.png",
+            "sliderImages": []
+        },
+        {
+            "id": 2,
+            "title": "Science fiction",
+            "logo": "http://cdn.onlinewebfonts.com/svg/download_534831.png",
+            "sliderImages": []
+        },
+        {
+            "id": 3,
+            "title": "Roman",
+            "logo": "https://i7.pngguru.com/preview/445/853/287/silhouette-black-white-character-clip-art-couple-figure.jpg",
+            "sliderImages": []
+        },
+        {
+            "id": 4,
+            "title": "Detective",
+            "logo": "https://www.pngix.com/pngfile/big/62-624703_download-png-transparent-png.png",
+            "sliderImages": []
+        },
+        {
+            "id": 5,
+            "title": "Classics",
+            "logo": "http://www.tania-soleil.com/wp-content/uploads/2016/01/Pushkin-profil-350x348.jpg",
+            "sliderImages": []
         }
     ]
 }

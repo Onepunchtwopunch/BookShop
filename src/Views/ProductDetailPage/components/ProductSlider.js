@@ -9,7 +9,7 @@ export default function ProductSlider({ images }) {
         <Carousel
             className={classes.sliderWrapper}
             showArrows={false}
-            showThumbs={false}
+            showThumbs={true}
             infiniteLoop={true}
         >
             {images.map((image, index) => (

@@ -55,14 +55,47 @@ export default function ProductDetailPage() {
                         </IconButton>
                     </div>
 
-                    <Typography variant="h3">{productDetail.title}</Typography>
-                    <Typography variant="h4">{productDetail.author}</Typography>
-                    <Typography variant="h5">{productDetail.genre}</Typography>
+                    <Typography
+                        style={{
+                            textAlign: "center",
+                            display: "inline-flex",
+                            alignItems: "baseline",
+                            fontWeight: "bold",
+                        }}
+                        variant="h1"
+                    >
+                        {productDetail.title}
+                    </Typography>
+                    <Typography
+                        style={{ textAlign: "end", marginTop: 30 }}
+                        variant="h3"
+                    >
+                        {productDetail.author}
+                    </Typography>
+                    <Typography
+                        style={{
+                            textAlign: "end",
+                            fontWeight: "bold",
+                            fontStyle: "oblique",
+                        }}
+                        variant="h4"
+                    >
+                        {productDetail.genre}
+                    </Typography>
 
-                    <Typography variant="body1">
+                    <Typography
+                        style={{ textAlign: "start" }}
+                        fontWeight="fontWeightLight"
+                        variant="h4"
+                    >
                         {productDetail.description}
                     </Typography>
-                    <Typography variant="h3">{productDetail.price}</Typography>
+                    <Typography
+                        style={{ textAlign: "end", color: "green" }}
+                        variant="h4"
+                    >
+                        {productDetail.price} kgz som
+                    </Typography>
                 </div>
             ) : (
                 <Loader />
